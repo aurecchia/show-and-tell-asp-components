@@ -22,10 +22,10 @@
 
 
 
-<!--
 <h2>Examples</h2>
 
 @await Html.PartialAsync("Partials/_DeprecationWarningPartial")
+<!--
 -->
 
 
@@ -38,25 +38,8 @@
 
 
 
-
-<!--
-<p>
-    <a href="JustPartial">I want just that thing ☝️</a>
-</p>
--->
-
-
-
-
-
-
-
-
-
-
-
-<!--
 @await Html.PartialAsync("Partials/_DeprecationWarningWithContext")
+<!--
 -->
 
 
@@ -69,10 +52,10 @@
 
 
 
-<!--
 @await Html.PartialAsync(
     "Partials/_DeprecationWarningWithAlternatives",
     new [] { "AlternativeOne", "AlternativeTwo", "LastResort" })
+<!--
 -->
 
 
@@ -85,8 +68,8 @@
 
 
 
-<!--
 <partial name="Partials/_DeprecationWarningWithContext" />
+<!--
 -->
 
 
@@ -99,9 +82,26 @@
 
 
 
-<!--
 <partial name="Partials/_DeprecationWarningWithAlternatives"
-         model="@(new [] { "AlternativeOne", "AlternativeTwo", "LastResort" })" />
+         model=@(new [] { "AlternativeOne", "AlternativeTwo", "LastResort" }) />
+<!--
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    <a href="JustPartial">I want just that thing ☝️</a>
+</p>
+<!--
 -->
 
 

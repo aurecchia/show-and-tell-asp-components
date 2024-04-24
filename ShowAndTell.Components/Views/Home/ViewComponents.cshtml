@@ -16,6 +16,10 @@ ViewData["Title"] = "View Components";
 
 <h2>Examples</h2>
 
+<!-- TODO Example with banner again, but customizable -->
+
 @await Component.InvokeAsync("Cart", new { cartId = 1 })
 
 @await Component.InvokeAsync("Cart", new { cartId = 1, compact = true })
+
+<vc:cart cartId="1"></vc:cart>
