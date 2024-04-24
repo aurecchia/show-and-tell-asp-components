@@ -1,0 +1,7 @@
+@using ShowAndTell.Components.ViewComponents
+
+@model Cart
+
+<div class="cart">
+    @Model.Items.Count() items for @Model.Items.Sum(item => item.Price).ToString("C")
+</div>

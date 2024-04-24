@@ -1,0 +1,113 @@
+@{
+    ViewData["Title"] = "Partial Views";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Other snippets of CSHTML that can be embedded.</p>
+
+<h2>When to use them</h2>
+
+<ul>
+    <li>Break up larger files into smaller parts</li>
+    <li>Reduce duplication</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<!--
+<h2>Examples</h2>
+
+@await Html.PartialAsync("Partials/_DeprecationWarningPartial")
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<p>
+    <a href="JustPartial">I want just that thing ☝️</a>
+</p>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+@await Html.PartialAsync("Partials/_DeprecationWarningWithContext")
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+@await Html.PartialAsync(
+    "Partials/_DeprecationWarningWithAlternatives",
+    new [] { "AlternativeOne", "AlternativeTwo", "LastResort" })
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<partial name="Partials/_DeprecationWarningWithContext" />
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<partial name="Partials/_DeprecationWarningWithAlternatives"
+         model="@(new [] { "AlternativeOne", "AlternativeTwo", "LastResort" })" />
+-->
+
+
+<h2>References</h2>
+
+<ul>
+    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-8.0">Partial views in ASP.NET Core</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-8.0#partial-view-discovery">Discovery</a></li>
+</ul>

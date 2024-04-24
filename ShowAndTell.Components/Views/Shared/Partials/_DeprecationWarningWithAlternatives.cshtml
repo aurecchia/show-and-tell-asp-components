@@ -1,0 +1,12 @@
+@model IEnumerable<string>
+
+<div class="block warning">
+    <strong>This thing is deprecated!</strong>
+    <p>You should migrate to one of:
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><pre>@item</pre></li>
+        }
+    </ul>
+</div>

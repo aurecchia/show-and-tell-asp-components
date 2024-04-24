@@ -1,0 +1,18 @@
+@using ShowAndTell.Components.ViewComponents
+
+@model Cart
+
+<div class="cart">
+    <ol>
+        @foreach (var item in Model.Items)
+        {
+            <li class="line-item">
+                <span>@item.Name</span>
+                <span>@item.Price.ToString("C")</span>
+            </li>
+        }
+    </ol>
+    <div class="total">
+        Total: @Model.Items.Sum(item => item.Price).ToString("C")
+    </div>
+</div>

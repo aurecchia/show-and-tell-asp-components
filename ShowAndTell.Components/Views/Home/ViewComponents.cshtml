@@ -1,0 +1,21 @@
+
+@{
+ViewData["Title"] = "View Components";
+}
+
+<h1>View Components</h1>
+
+<p>Self-contained pieces of code that render <em>chunks</em> of a view.</p>
+
+<h2>When to use them</h2>
+
+<ul>
+    <li>More complex use-cases than partial views</li>
+    <li>Self-contained business logic</li>
+</ul>
+
+<h2>Examples</h2>
+
+@await Component.InvokeAsync("Cart", new { cartId = 1 })
+
+@await Component.InvokeAsync("Cart", new { cartId = 1, compact = true })
