@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ShowAndTell.Components</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div>
+
+        </div>
+        <h1>
+            <a asp-area="" asp-controller="Home" asp-action="Index">ShowAndTell.Components</a>
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a class="nav-link text-dark" asp-controller="Home" asp-action="Partials">Partial Views</a></li>
+            <li><a class="nav-link text-dark" asp-controller="Home" asp-action="ViewComponents">View Components</a></li>
+            <li><a class="nav-link text-dark" asp-controller="Home" asp-action="ViewComponents">Tag Helpers</a></li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
